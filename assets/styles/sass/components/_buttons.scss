@@ -1,0 +1,8 @@
+#submit {
+    @include submitBtn;
+}
+#submit:hover {
+    background-color: $color-primary;
+    color: $color-secondary;
+    cursor: pointer;
+}

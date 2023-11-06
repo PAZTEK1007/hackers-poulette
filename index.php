@@ -2,18 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./assets/styles/css/style.css">
+    <link rel="stylesheet" href="./assets/styles/sass/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Support</title>
 </head>
 <body>
-    
+
+<header>
+    <nav>
+        <ul class="navMenu">
+            <li class="navItems"><a href="index.php">Home</a></li>
+            <li class="navItems"><a href="index.php">Contact Support</a></li>
+            <li class="navItems"><a href="index.php">About</a></li>
+        <ul>
+    </nav>
+</header>
 
 <form method="get" action="">
 <div class="container">
-    <h3>Contact Support</h3>
-    <p>Please fill in this form to contact support.</p>
-    <hr>
+    <div class="title">
+        <h3>Contact Support</h3>
+        <p>Please fill in this form to contact support.</p>
+    </div>
     <div class="name">
         <label for="name">Name</label>
         <input type="text" name="name" placeholder="Enter your Name" required>
@@ -21,6 +31,14 @@
     <div class="lastName">
         <label for="lastName">Last Name</label>
         <input type="text" name="lastName" placeholder="Enter your Last Name" required>
+    </div>
+    <div class="gender">
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" value="M">
+        <label for="M">M</label>
+        <input type="radio" name="gender" value="F">
+        <label for="F">F</label>
+
     </div>
     <div class="email">
         <label for="email">Email</label>
@@ -39,15 +57,17 @@
         </select>
     </div>
     <div class="message">
-        <label for="message">Message</label>
         <textarea name="message" placeholder="Message" required></textarea>
     </div>
-<input type="submit" name="submit" value="Submit">
-
+    <input id="submit" type="submit" name="submit" value="SEND">
 </div>
 </form>
 
-
+<footer>
+    <div class="footer">
+        <p>© Copyright 2023 - All rights reserved</p>
+    </div>
+</footer>
 
 
 

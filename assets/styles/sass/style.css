@@ -1,0 +1,148 @@
+@font-face {
+  font-family: BellotaBold;
+  src: url(../../../fonts/Bellota-Bold.otf);
+  format: "opentype";
+}
+@font-face {
+  font-family: BellotaRegular;
+  src: url(../../../fonts/Bellota-Regular.otf);
+  format: "opentype";
+}
+@font-face {
+  font-family: BellotaLight;
+  src: url(../../../fonts/Bellota-Light.otf);
+  format: "opentype";
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: #303030;
+}
+
+.container {
+  width: 600px;
+  display: grid;
+  gap: 2px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row: auto;
+  grid-template-areas: "title title" "name lastName" "gender email" "country subject" "message message" "submit submit";
+  background-color: #FFF;
+  border-radius: 25px;
+  border: 1px solid #0d8187;
+  box-shadow: 1px 17px 40px 7px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 17px 40px 7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 17px 40px 7px rgba(0, 0, 0, 0.75);
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 2rem;
+}
+
+.title {
+  font-family: BellotaBold;
+  color: #0d8187;
+  grid-area: title;
+  border-bottom: 1px solid #0d8187;
+  padding: 1rem;
+  text-align: center;
+}
+
+.name {
+  margin-top: 1rem;
+  padding: 3px;
+  grid-area: name;
+}
+
+.lastName {
+  margin-top: 1rem;
+  padding: 3px;
+  grid-area: lastName;
+}
+
+.gender {
+  padding: 3px;
+  grid-area: gender;
+}
+
+.email {
+  padding: 3px;
+  grid-area: email;
+}
+
+.country {
+  padding: 3px;
+  padding-left: 3px;
+  grid-area: country;
+}
+
+.subject {
+  grid-area: subject;
+}
+
+.message {
+  padding: 3px;
+  grid-area: message;
+  text-align: center;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  resize: none;
+  border-radius: 5px;
+  border: 1px solid #0d8187;
+  padding: 5px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}/*# sourceMappingURL=style.css.map */

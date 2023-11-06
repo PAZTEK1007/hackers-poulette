@@ -1,0 +1,94 @@
+body{
+    background-color: $color-tertiary;
+
+}
+.container {
+    width:600px;
+
+    display: grid;
+    gap: 2px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: auto;
+    grid-template-areas: 
+    "title title"
+    "name lastName"
+    "gender email"
+    "country subject"
+    "message message"
+    "submit submit"
+    ;
+
+    background-color: $color-secondary;
+    border-radius: 25px;
+    border: 1px solid $color-primary;
+
+    box-shadow: 1px 17px 40px 7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 17px 40px 7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 17px 40px 7px rgba(0,0,0,0.75);
+
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 2rem;
+
+}
+
+.title {
+    font-family: BellotaBold;
+    color: $color-primary;
+    grid-area: title;
+    border-bottom: 1px solid $color-primary;
+    padding: 1rem;
+    text-align: center;
+}
+.name {
+    margin-top: 1rem;
+    padding: 3px;
+    grid-area: name;
+
+}
+.lastName {
+    margin-top: 1rem;
+    padding: 3px;
+    grid-area: lastName;
+
+}
+.gender {
+    padding: 3px;
+    grid-area: gender;
+
+}
+.email {
+    padding: 3px;
+    grid-area: email;
+
+}
+.country {
+    padding: 3px;
+    padding-left: 3px;
+    grid-area: country;
+
+}
+.subject {
+    grid-area: subject;
+
+}
+.message {
+    padding: 3px;
+    grid-area: message;
+    text-align: center;
+
+}
+textarea{
+    width: 100%;
+    height: 100px;
+    resize: none;
+
+    border-radius: 5px;
+    border: 1px solid $color-primary;
+
+    padding: 5px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
