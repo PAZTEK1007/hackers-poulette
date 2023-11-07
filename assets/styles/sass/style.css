@@ -119,6 +119,9 @@ table {
   cursor: pointer;
   border: 1px solid #0d8187;
   border-radius: 5px;
+  box-shadow: 1px 6px 20px -6px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 1px 6px 20px -6px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 1px 6px 20px -6px rgba(0, 0, 0, 0.23);
   padding: 0.5rem;
 }
 
