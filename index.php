@@ -12,6 +12,7 @@ require('./assets/php/sendMail.php');
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./assets/styles/sass/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./assets/main.js"></script>
     <title>Contact Support</title>
 </head>
 <body>
@@ -64,7 +65,7 @@ require('./assets/php/sendMail.php');
     </div>
     <div class="email">
         <label for="email">Email</label>
-        <input type="email" name="email" placeholder="Enter your Email" required>
+        <input id="mail" type="email" name="email" placeholder="Enter your Email" required>
         <?php
             $email = isset($_GET['email']) ? $_GET['email'] : '';
             validateEmail($email);

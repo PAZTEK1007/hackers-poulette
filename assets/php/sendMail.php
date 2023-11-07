@@ -1,34 +1,39 @@
 <?php
-$name = $_POST['name'];
-$email = $_POST['email'];
-$message = $_POST['message'];
-$subject = $_POST['subject'];
-
-require "assets/vendor/autoload.php";
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+require "../vendor/autoload.php";
 
 $mail = new PHPMailer(true);
 
-$mail -> SMTPDebug = SMTP::DEBUG_SERVER;
+try {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+    $subject = $_POST['subject'];
 
-$mail ->isSMTP();
-$mail -> SMTPAuth = true;
+    $mail -> SMTPDebug = SMTP::DEBUG_SERVER;
 
-$mail -> Host = 'smtp.example.com';
-$mail -> SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-$mail -> Port = 587;
+    $mail ->isSMTP();
+    $mail -> SMTPAuth = false;
 
-$mail -> Username = 'username';
-$mail -> Password = 'password';
+    $mail -> Host = 'localhost';
+    $mail -> Port = 1025;
 
-$mail -> setFrom($email, $name);
-$mail -> addAddress("robert@example.com", "Robert");
+    $mail -> Username = 'username';
+    $mail -> Password = 'password';
 
-$mail -> Subject = $subject;
-$mail -> Body = $message;
+    $mail -> setFrom($email, $name);
+    $mail -> addAddress("mathbarbier07@gmail.com", "Robert");
 
-$mail -> send();
+    $mail -> Subject = $subject;
+    $mail -> Body = $message;
 
+    $mail -> send();
+    echo 'Message has been sent';
+} catch (Exception $e) {
+    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+}
 ?>
