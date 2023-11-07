@@ -11,9 +11,11 @@
 <header>
     <nav>
         <ul class="navMenu">
-            <li class="navItems"><a href="index.php">Home</a></li>
-            <li class="navItems"><a href="index.php">Contact Support</a></li>
-            <li class="navItems"><a href="index.php">About</a></li>
+            <li class="navItems"><a class="items" href="index.php">Home</a></li>
+            <li class="navItems"><a class="items" href="index.php">Products</a></li>
+            <li class="navItems"><img id="logo" src="./assets/img/hackers-poulette-logo.png" alt="logo"></li>
+            <li class="navItems"><a class="items" href="index.php">Contact Support</a></li>
+            <li class="navItems"><a class="items" href="index.php">About</a></li>
         <ul>
     </nav>
 </header>
@@ -65,7 +67,7 @@
 
 <footer>
     <div class="footer">
-        <p>© Copyright 2023 - All rights reserved</p>
+        <p>© Hackers Poulette Copyright 2023 - All rights reserved</p>
     </div>
 </footer>
 

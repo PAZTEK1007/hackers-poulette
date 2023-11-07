@@ -1,0 +1,41 @@
+.navMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    margin-left: 0;
+    border-bottom: 1px solid $color-primary;
+
+}  
+#logo {
+    width: 150px;
+}
+.navItems{
+    text-decoration: none;
+    color: $color-primary;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    
+}
+.items{
+    color: $color-primary;
+    text-decoration: none;
+}
+.items:hover{
+    cursor: pointer;
+
+    border: 1px solid $color-primary;
+    border-radius: 5px;
+
+    padding: 0.5rem;
+}   
