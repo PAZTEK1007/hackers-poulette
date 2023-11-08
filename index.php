@@ -16,7 +16,6 @@ $country = isset($_GET['country']) ? $_GET['country'] : '';
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./assets/styles/sass/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./assets/main.js"></script>
     <title>Contact Support</title>
 </head>
 <body>

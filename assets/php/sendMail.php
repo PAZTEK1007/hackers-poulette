@@ -1,30 +1,11 @@
-<?php
-function validateEmail($email) {
-    if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        return true;
-    } else {
-        return false;
-    }
-}
 
-
-function requireField($fields) {
-    foreach ($fields as $field) {
-        if (empty($_POST[$field])) {
-            return false;
-        }
-    }
-    return true;
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../styles/sass/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./assets/main.js"></script>
-    <title>Contact Support</title>
+    <title>Ticket Send</title>
 </head>
 <body>
 <header>
