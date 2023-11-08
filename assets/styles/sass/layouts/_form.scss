@@ -27,28 +27,46 @@ body{
     -moz-box-shadow: 1px 17px 40px 7px rgba(0,0,0,0.75);
 
     margin: 0 auto;
-    margin-top: 7rem;
+    margin-top: 5rem;
     margin-bottom: 7rem;
     padding: 2rem;
 
 }
 
-.title {
+label {
+    font-family: BellotaRegular;
+    color: $color-primary;
+    font-size: 1.1rem;
+}
+#title{
+    font-family: BellotaBold;
+    color: $color-tertiary;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+#subtitle{
     font-family: BellotaBold;
     color: $color-primary;
+    font-size: 1.2rem;
+
+    margin-top: 1rem;
+}
+.title {
     grid-area: title;
+
     border-bottom: 1px solid $color-primary;
     padding: 1rem;
     text-align: center;
 }
 .name {
-    margin-top: 1rem;
+    margin-top: 2rem;
     padding: 3px;
     grid-area: name;
 
 }
 .lastName {
-    margin-top: 1rem;
+    margin-top: 2rem;
     padding: 3px;
     grid-area: lastName;
 
@@ -64,6 +82,7 @@ body{
 
 }
 .country {
+
     padding: 3px;
     padding-left: 3px;
     grid-area: country;

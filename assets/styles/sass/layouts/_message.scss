@@ -1,0 +1,32 @@
+.messageContainer{
+    width: 60%;
+    height: 150px;
+
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 20px;
+
+    border: 1px solid $color-primary;
+    border-radius: 7px;
+
+    background-color: $color-secondary;
+
+}
+
+.sucess{
+    margin-top: 4rem;
+    text-align: center;
+
+    font-size: 24px;
+    font-family: BellotaRegular;
+    color: $color-primary;
+}
+
+.error{
+    margin-top: 4rem;
+    text-align: center;
+
+    font-size: 24px;
+    font-family: BellotaRegular;
+    color: red;
+}

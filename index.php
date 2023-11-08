@@ -1,7 +1,11 @@
 <?php
 
-require('./assets/php/function.php');
-require('./assets/php/sendMail.php');
+$message = isset($_GET['message']) ? $_GET['message'] : '';
+$name = isset($_GET['name']) ? $_GET['name'] : '';
+$lastName = isset($_GET["lastName"]) ? $_GET["lastName"] : '';
+$gender = isset($_GET['gender']) ? $_GET(['gender']) : '';
+$email = isset($_GET['email']) ? $_GET['email'] : '';
+$country = isset($_GET['country']) ? $_GET['country'] : '';
 
 
 ?>
@@ -32,24 +36,16 @@ require('./assets/php/sendMail.php');
 <form method="post" action="./assets/php/sendMail.php">
 <div class="container">
     <div class="title">
-        <h3>Contact Support</h3>
-        <p>Please fill in this form to contact support.</p>
+        <h3 id="title">Contact Support</h3>
+        <p id="subtitle">Please fill in this form to contact support.</p>
     </div>
     <div class="name">
         <label for="name">Name</label>
-        <input type="text" name="name" placeholder="Enter your Name" required>
-        <?php
-            $name = isset($_GET['name']) ? $_GET['name'] : '';
-            requireField($name);
-        ?>
+        <input id="name" type="text" name="name" placeholder="Enter your Name" required>
     </div>
     <div class="lastName">
         <label for="lastName">Last Name</label>
-        <input type="text" name="lastName" placeholder="Enter your Last Name" required>
-        <?php
-            $lastName = isset($_GET["lastName"]) ? $_GET["lastName"] : '';
-            requireField($lastName); 
-        ?>
+        <input id="lastName" type="text" name="lastName" placeholder="Enter your Last Name" required>
     </div>
     <div class="gender">
         <label for="gender">Gender</label>
@@ -57,28 +53,14 @@ require('./assets/php/sendMail.php');
         <label for="M">M</label>
         <input type="radio" name="gender" value="F">
         <label for="F">F</label>
-        <?php 
-            $gender = isset($_GET['gender']) ? $_GET(['gender']) : '';
-            requireField($gender); 
-        ?>
-
     </div>
     <div class="email">
         <label for="email">Email</label>
         <input id="mail" type="email" name="email" placeholder="Enter your Email" required>
-        <?php
-            $email = isset($_GET['email']) ? $_GET['email'] : '';
-            validateEmail($email);
-            requireField($email);
-        ?>
     </div>
     <div class="country">
         <label for="country">Country</label>
-        <input type="text" name="country" placeholder="Enter your country" required>
-        <?php
-            $country = isset($_GET['country']) ? $_GET['country'] : '';
-            requireField($country); 
-        ?>
+        <input id="country" type="text" name="country" placeholder="Enter your country" required>
     </div>
     <div class="subject">
         <label for="subject">Subject</label>
@@ -90,10 +72,6 @@ require('./assets/php/sendMail.php');
     </div>
     <div class="message">
         <textarea name="message" placeholder="Message" required></textarea>
-        <?php
-            $message = isset($_GET['message']) ? $_GET['message'] : '';
-            requireField($message);
-        ?>
     </div>
     <input id="submit" type="submit" name="submit" value="SEND">
 </div>

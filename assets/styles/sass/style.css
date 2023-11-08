@@ -84,6 +84,38 @@ table {
   cursor: pointer;
 }
 
+#name {
+  width: 150px;
+  margin-left: 0.5rem;
+  padding: 3px;
+  border: 1px solid #0d8187;
+  border-radius: 5px;
+}
+
+#country {
+  width: 150px;
+  margin-left: 0.5rem;
+  padding: 3px;
+  border: 1px solid #0d8187;
+  border-radius: 5px;
+}
+
+#lastName {
+  width: 150px;
+  margin-left: 0.5rem;
+  padding: 3px;
+  border: 1px solid #0d8187;
+  border-radius: 5px;
+}
+
+#mail {
+  width: 150px;
+  margin-left: 0.5rem;
+  padding: 3px;
+  border: 1px solid #0d8187;
+  border-radius: 5px;
+}
+
 .navMenu {
   display: flex;
   flex-direction: row;
@@ -143,14 +175,32 @@ body {
   -webkit-box-shadow: 1px 17px 40px 7px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 1px 17px 40px 7px rgba(0, 0, 0, 0.75);
   margin: 0 auto;
-  margin-top: 7rem;
+  margin-top: 5rem;
   margin-bottom: 7rem;
   padding: 2rem;
 }
 
-.title {
+label {
+  font-family: BellotaRegular;
+  color: #0d8187;
+  font-size: 1.1rem;
+}
+
+#title {
+  font-family: BellotaBold;
+  color: #303030;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#subtitle {
   font-family: BellotaBold;
   color: #0d8187;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.title {
   grid-area: title;
   border-bottom: 1px solid #0d8187;
   padding: 1rem;
@@ -158,13 +208,13 @@ body {
 }
 
 .name {
-  margin-top: 1rem;
+  margin-top: 2rem;
   padding: 3px;
   grid-area: name;
 }
 
 .lastName {
-  margin-top: 1rem;
+  margin-top: 2rem;
   padding: 3px;
   grid-area: lastName;
 }
@@ -204,6 +254,33 @@ textarea {
   padding: 5px;
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.messageContainer {
+  width: 60%;
+  height: 150px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 20px;
+  border: 1px solid #0d8187;
+  border-radius: 7px;
+  background-color: #FFF;
+}
+
+.sucess {
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 24px;
+  font-family: BellotaRegular;
+  color: #0d8187;
+}
+
+.error {
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 24px;
+  font-family: BellotaRegular;
+  color: red;
 }
 
 .footer {
